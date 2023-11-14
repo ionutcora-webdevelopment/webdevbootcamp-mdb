@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mask {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.light-mask {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.medium-mask {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar {
+    z-index: 100;
+    margin-top: -3rem;
+}
+
+.navbar .input-group>.form-control:focus {
+    border-color: #dc4c64;
+    box-shadow: inset 0 0 0 1px #dc4c64;
+}
+
+.hero {
+    background-image: url(./images/hero-img.jpg);
+    height: 600px;
+}
+
+.smaller-hero {
+    height: 500px;
+}
+
+.courses-page-hero {
+    background-image: url(./images/courses-hero-img.jpg);
+}
+
+.about-page-hero {
+    background-image: url(./images/about-hero-img.jpg);
+}
+
+.contact-page-hero {
+    background-image: url(./images/contact-hero-img.jpg);
+}
+
+.home-hero-title {
+    font-size: 4rem;
+}
+
+.home-hero-title span {
+    color: #dc4c64;
+}
+
+.hero-title {
+    font-size: 5rem;
+}
+
+.instructors-section img,
+.carousel img {
+    width: 150px;
+}
+
+.accordion {
+    width: 60%;
+}
+
+.accordion .accordion-flush,
+.accordion .accordion-item {
+    --mdb-accordion-flush-btn-box-shadow: inset 0 -2px 0 #f3f3f3;
+    --mdb-accordion-flush-border-bottom: 2px solid #f3f3f3;
+}
+
+.accordion .accordion-button:not(.collapsed) {
+    color: #4f4f4f;
+    background-color: transparent;
+}
+
+.accordion .accordion-button:not(.collapsed)::after {
+    background-image: var(--mdb-accordion-btn-icon);
+}
+
+.contact-section {
+    background-image: url(./images/office-img.jpg);
+    height: 400px;
+}
+
+.contact-form {
+    width: 75%;
+}
+
+.contact-form .form-outline .form-control:focus~.form-label {
+    color: #dc4c64;
+}
+
+.contact-form .form-outline .form-control:focus~.form-notch .form-notch-leading,
+.contact-form .form-outline .form-control:focus~.form-notch .form-notch-middle,
+.contact-form .form-outline .form-control:focus~.form-notch .form-notch-trailing {
+    border-color: #dc4c64;
+}
+
+.contact-form .form-outline .form-control:focus~.form-notch .form-notch-leading {
+    box-shadow: -1px 0 0 0 #dc4c64, 0 1px 0 0 #dc4c64, 0 -1px 0 0 #dc4c64;
+}
+
+.contact-form .form-outline .form-control:focus~.form-notch .form-notch-middle {
+    box-shadow: 0 1px 0 0 #dc4c64;
+    border-top: 1px solid transparent;
+}
+
+.contact-form .form-outline .form-control:focus~.form-notch .form-notch-trailing {
+    box-shadow: 1px 0 0 0 #dc4c64, 0 -1px 0 0 #dc4c64, 0 1px 0 0 #dc4c64;
+}
+
+@media screen and (max-width: 992px) {
+    .accordion {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-hero-title,
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .home-hero-title {
+        font-size: 2.5rem;
+    }
+}
